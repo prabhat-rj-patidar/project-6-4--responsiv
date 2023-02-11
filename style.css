@@ -1,0 +1,56 @@
+body{
+    height: 100vh;
+    background-color: #80ffd4;
+}
+
+h1{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.monitor,
+.laptop,
+.tablet,
+.mobile {
+  font-size: medium;
+  text-align: center;
+  display: none;
+}
+
+@media screen and (min-width:1024px) and (max-width:1440px) {
+    body{
+        background-color: darkgreen;
+    }
+    .monitor{
+        display: block;
+    }
+    
+}
+@media screen and (min-width:768px) and (max-width:1024px) {
+    body{
+        background-color: chocolate;
+    }
+   
+    .laptop{
+        display: block;
+    }
+    
+@media screen and (min-width:425px) and (max-width:768px){
+    body{
+        background-color: aqua;
+    }
+  
+    .tablet{
+        display: block;
+    }
+   
+}
+@media screen and (max-width:425px) {
+    body{
+        background-color: darkred;
+    }
+   
+    .mobile{
+        display: block;
+    }    
+}
